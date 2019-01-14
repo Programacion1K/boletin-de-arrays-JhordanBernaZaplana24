@@ -1,5 +1,9 @@
 public class EstructuraIP {
 
+    public EstructuraIP (int[] bytes){
+        this.bytes = bytes;
+    }
+
     public static String getDireccionIp() {
     }
 
