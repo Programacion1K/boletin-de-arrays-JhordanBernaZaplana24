@@ -27,7 +27,7 @@ public class DireccionIP {
                 int[] bytes = new int[4];
                 String salida = "";
                 for (int i= 0; i<bytes.length; i++){
-                    salida = JOptionPane.showInputDialog(null, "Introduce el byte:"+contadorBytes);
+                    salida = JOptionPane.showInputDialog(null, "Introduce el byte: "+contadorBytes);
                     bytes[i] = Integer.parseInt(salida);
                     contadorBytes++;
                 }
@@ -48,8 +48,8 @@ public class DireccionIP {
             salida += EstructuraIP.getMascaraRed() + "\n";
             salida += EstructuraIP.getEsPrivada() + "\n";
             salida += EstructuraIP.getClase() + "\n";
-            salida += EstructuraIP.getEsIdRed();
+            salida += EstructuraIP.getSaberSiEsIDRed();
 
-            JOptionPane.showMessageDialog(null, salida, "INFORMACIÓN DE LA IP", 0, miIcono);
+            JOptionPane.showMessageDialog(null, salida, "INFORMACIÓN DE LA IP",0, miIcono);
         }
     }
