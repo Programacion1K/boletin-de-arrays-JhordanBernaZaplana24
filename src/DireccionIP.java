@@ -1,5 +1,6 @@
 import javax.swing.*;
 import javax.swing.Icon;
+import javax.swing.ImageIcon;
 
 public class DireccionIP {
     public static void main(String[] args) {
@@ -39,7 +40,7 @@ public class DireccionIP {
         }
     }
 
-    public static void mostrarInformacionSobreLaIP(EstructuraIP ip) {
+    public static void mostrarInformacionSobreLaIP(EstructuraIP cadena) {
         Icon miIcono = new ImageIcon("ip-address.png");
             String salida = "";
             salida += EstructuraIP.getDireccionIp() + "\n";
